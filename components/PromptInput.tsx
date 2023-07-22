@@ -92,16 +92,10 @@ function PromptInput() {
         <p className="font-regular md:text-md text-lg  mr-3 text-[#767677]">
           Start with a detailed description
         </p>
-        <button
-          onClick={surpriseMeHandler}
-          type="button"
-          className="font-bold text-xs hover:opacity-70 transition-opacity py-1.5 rounded-md px-3 text-black  items-center justify-center bg-[#EDEDF1] md:flex hidden"
-        >
-          Surprise me
-        </button>
+        
       </div>
 
-      <div className="md:sticky top-16  z-50 w-full md:h-[4.3rem] h-[14rem]">
+      <div className="md:sticky top-4  z-50 w-full md:h-[4.3rem] h-[14rem]">
         <form
           onSubmit={(e) => handleFormSubmit(e)}
           className="h-full w-full    relative flex items-center py-3"
@@ -123,14 +117,7 @@ function PromptInput() {
             >
               Generate
             </button>
-            <button
-              onClick={surpriseMeHandler}
-              type="button"
-              id="mobile-generate-button-1"
-              className=" absolute bottom-0  left-0 w-full md:hidden flex items-center justify-center transition-colors duration-300 px-4  h-16  rounded-b-md  text-[1rem] font-bold text-black border-t border-t-[#F3F3F2]"
-            >
-              Surprise me
-            </button>
+            
             <button
               id="mobile-generate-button-2"
               type="submit"
@@ -142,16 +129,7 @@ function PromptInput() {
         </form>
       </div>
 
-      <div className="w-full h-20 flex items justify-center items-center">
-        <p className="font-regular text-md mr-3 text-black md:flex hidden">
-          <span className="text-[#767677]">Or,</span>{" "}
-          <span className="cursor-pointer mx-1">upload an image</span>
-          <span className="text-[#767677]">to edit</span>
-        </p>
-        <button className="  w-full md:hidden flex items-center justify-center transition-colors duration-300 px-4  h-14  rounded-md  text-[0.930rem] bg-[#EDEDF1] font-bold text-black ">
-          Upload an image
-        </button>
-      </div>
+     
     </div>
   );
 }

@@ -5,9 +5,9 @@ import ProfileImage from "../public/images/profile.jpeg";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-[100] bg-[#FAFBFD]" >
-      <div className="w-full h-[4.2rem] flex border-b items-center border-b-[#EDEDEF]">
-        <div className="md:w-1/2 w-full md:static absolute h-full flex items-center pl-5 md:justify-start justify-center">
+    <header className="sticky top-0 z-[100] bg-[#FAFBFD] w-96">
+    <div className="w-full h-[4.2rem] flex border-b items-center border-b-[#EDEDEF]">
+      <div className="md:w-1/2 w-full md:static absolute h-full flex items-center pl-5 md:justify-start justify-center"> 
           <Image
             src={OpenaiLogo}
             alt="openai-logo"
